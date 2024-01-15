@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.layerd_hibrnate.controller.CustomerController">
+   <children>
+      <Label layoutX="181.0" layoutY="14.0" text="Customer Form">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="custIdTxt" layoutX="271.0" layoutY="95.0" />
+      <Label layoutX="56.0" layoutY="92.0" text="Customer ID">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="142.0" text="Customer Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="200.0" text="Customer Address">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="custNameTxt" layoutX="269.0" layoutY="147.0" />
+      <TextField fx:id="custAddresTxt" layoutX="270.0" layoutY="203.0" />
+      <Button fx:id="saveBtn" layoutX="499.0" layoutY="92.0" mnemonicParsing="false" onAction="#saveOnAction" text="Save" />
+      <Button fx:id="deleteBtn" layoutX="499.0" layoutY="147.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="updateBtn" layoutX="499.0" layoutY="205.0" mnemonicParsing="false" onAction="#updateBtnOnAction" text="Update" />
+      <TableView fx:id="customerTable" layoutX="58.0" layoutY="245.0" prefHeight="141.0" prefWidth="481.0">
+        <columns>
+          <TableColumn fx:id="cust_id_row" prefWidth="125.0" text="Id" />
+          <TableColumn fx:id="cust_name_row" minWidth="1.0" prefWidth="212.0" text="Name" />
+            <TableColumn fx:id="cust_adress_row" minWidth="6.0" prefWidth="143.0" text="Adress" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
